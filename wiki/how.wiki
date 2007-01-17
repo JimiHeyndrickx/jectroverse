@@ -1,0 +1,11 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+how are we gonna do this?
+
+
+= Details =
+
+Add your content here.  Format your content with:
+http://www.netbeans.org/kb/55/vwp-index.html
+looks like the easiest way to do this. Problem is then we will need a server with tomcat or so..
