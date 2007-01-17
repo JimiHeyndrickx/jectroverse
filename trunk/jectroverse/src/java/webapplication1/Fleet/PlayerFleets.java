@@ -64,7 +64,14 @@ public class PlayerFleets {
     
     public void MergeFleet(int firstFleetIndex, int secondFleetIndex){
         if(fleets.size() > 1){
-            
+            int[] firstFleetArray = getFleet(firstFleetIndex).getFleetArray();
+            int[] secondFleetArray = getFleet(secondFleetIndex).getFleetArray();
+            fleets.remove(firstFleetIndex);
+            fleets.remove(secondFleetIndex);
+            int[] finalFleetArray = new int[firstFleetArray.length];
+            for(int i = 0; i < finalFleetArray.length; i++)
+                finalFleetArray[i] = firstFleetArray[i] + secondFleetArray[i];
+            addFleet(new Fleet(finalFleetArray));
         }
         else
             System.err.println("cant merge only 1 fleet)");
@@ -77,11 +84,16 @@ public class PlayerFleets {
         }
     }
     
+    
+    
     public static void main(String[] args){
         
         // split fleet1 from the main fleet:
         Fleet newFleetWithAVeryOriginalName =  new Fleet(0,10,0,0,0,10,0,0,0,0,0,0,0);
+        Fleet anotherFleetWithAVeryStrangeName = new Fleet(100,10,0,0,0,10,0,0,0,0,0,0,0);
+        
         final PlayerFleets pf = new PlayerFleets();
+        
         pf.printFleets();
         System.out.println("newFleetWithName" + newFleetWithAVeryOriginalName);
     }
