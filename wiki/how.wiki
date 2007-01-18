@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary put here how are we gonna do this
 
 = Introduction =
 how are we gonna do this?
