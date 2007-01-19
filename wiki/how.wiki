@@ -6,6 +6,6 @@ how are we gonna do this?
 
 = Details =
 
-Add your content here.  Format your content with:
-http://www.netbeans.org/kb/55/vwp-index.html
-looks like the easiest way to do this. Problem is then we will need a server with tomcat or so..
+fini found a small 3-class webserver. it seems like that is what we are looking for
+here a little uide on how to use mysql with netbeans. mysql seems to me like the easiest database to use 
+http://www.netbeans.org/kb/articles/mysql-client.html
