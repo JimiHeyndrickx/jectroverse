@@ -32,10 +32,6 @@ public class HttpServer {
   // the shutdown command received
   private boolean shutdown = false;
 
-  public static void main(String[] args) {
-    HttpServer server = new HttpServer();
-    server.await();
-  }
 
   public void await() {
     ServerSocket serverSocket = null;
@@ -77,6 +73,7 @@ public class HttpServer {
         e.printStackTrace();
         continue;
       }
+      System.out.println("shutting down...");
     }
   }
 }
