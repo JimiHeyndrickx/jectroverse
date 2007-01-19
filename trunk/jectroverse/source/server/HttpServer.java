@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package webapplication1.server;
+package server;
 import java.net.Socket;
 import java.net.ServerSocket;
 import java.net.InetAddress;
@@ -24,8 +24,7 @@ public class HttpServer {
    *  The working directory is the location in the file system
    *  from where the java command was invoked.
    */
-  public static final String WEB_ROOT = "/home/ruben/";
-    //System.getProperty("user.dir") + File.separator  + "webroot";
+  public static final String WEB_ROOT = System.getProperty("user.dir") + File.separator  + "webroot";
 
   // shutdown command
   private static final String SHUTDOWN_COMMAND = "/SHUTDOWN";

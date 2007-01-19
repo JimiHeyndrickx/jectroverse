@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package webapplication1.server;
+package server;
 
 import java.io.InputStream;
 import java.io.IOException;

@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package webapplication1.server;
+package server;
 
 import java.io.OutputStream;
 import java.io.IOException;
@@ -41,6 +41,7 @@ public class Response {
     FileInputStream fis = null;
     try {
       File file = new File(HttpServer.WEB_ROOT, request.getUri());
+      System.out.println(file.getAbsolutePath());
       if (file.exists()) {
         fis = new FileInputStream(file);
         int ch = fis.read(bytes, 0, BUFFER_SIZE);
